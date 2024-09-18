@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="8dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+         android:layout_marginStart="20dp"
+         android:layout_marginEnd="20dp"
+         android:background="@drawable/car_bg"
+         android:orientation="vertical">
+
+         <ImageView
+             android:id="@+id/img_car"
+             android:layout_width="270dp"
+             android:layout_height="180dp"
+             android:layout_margin="8dp"
+             android:layout_gravity="center"
+             android:scaleType="centerCrop"
+             android:src="@drawable/car15"/>
+
+
+
+     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car Name"
+            android:textSize="24sp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_car_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
